@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="textBottom">#c9c9c9</color>
+    <color name="text">#f511a9</color>
+    <color name="rippleSignInBtn">#29487d</color>
+    <color name="signInBtn">#4267b2</color>
+    <color name="rippleSignUpBtn">#578843</color>
+    <color name="signUpBtn">#79bc64</color>
+    <color name="rippleCancelBtn">#D3D3D3</color>
+    <color name="dimGray">#696969</color>
+    <color name="darkGray">#A9A9A9</color>
+    <color name="white">#FFF</color>
+    <color name="purple">#f258fc</color>
+    <color name="yellow">#fcff73</color>
+    <color name="green">#2fcc5b</color>
+    <color name="orange">#faa320</color>
+    <color name="blue">#93caf5</color>
+</resources>
