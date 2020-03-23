@@ -176,7 +176,7 @@
             android:layout_weight="1"
             android:layout_marginStart="25dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/btn_sign_in"
+            android:background="@color/signUpBtn"
             android:fontFamily="@font/montserrat"
             android:text="@string/submit"
             android:textColor="@android:color/white" />

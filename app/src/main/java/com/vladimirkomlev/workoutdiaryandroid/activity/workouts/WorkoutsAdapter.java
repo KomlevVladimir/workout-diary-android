@@ -83,12 +83,19 @@ public class WorkoutsAdapter extends RecyclerView.Adapter<WorkoutsAdapter.Workou
             List<Integer> colors = new ArrayList<>();
             colors.add(context.getResources().getColor(R.color.purple));
             colors.add(context.getResources().getColor(R.color.colorAccent));
-            colors.add(context.getResources().getColor(R.color.colorPrimary));
             colors.add(context.getResources().getColor(R.color.orange));
             colors.add(context.getResources().getColor(R.color.yellow));
             colors.add(context.getResources().getColor(R.color.white));
             colors.add(context.getResources().getColor(R.color.blue));
             colors.add(context.getResources().getColor(R.color.green));
+            colors.add(context.getResources().getColor(R.color.textBottom));
+            colors.add(context.getResources().getColor(R.color.red));
+            colors.add(context.getResources().getColor(R.color.darkGreen));
+            colors.add(context.getResources().getColor(R.color.pink));
+            colors.add(context.getResources().getColor(R.color.darkWhite));
+            colors.add(context.getResources().getColor(R.color.darkOrange));
+            colors.add(context.getResources().getColor(R.color.teal));
+
             Random random = new Random();
             return colors.get(random.nextInt(colors.size()));
 

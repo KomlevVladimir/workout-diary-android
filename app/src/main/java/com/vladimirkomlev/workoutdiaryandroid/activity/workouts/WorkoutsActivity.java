@@ -21,6 +21,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.vladimirkomlev.workoutdiaryandroid.R;
 import com.vladimirkomlev.workoutdiaryandroid.activity.editor.EditorActivity;
 import com.vladimirkomlev.workoutdiaryandroid.activity.reset.ResetPasswordActivity;
+import com.vladimirkomlev.workoutdiaryandroid.activity.signin.SignInActivity;
 import com.vladimirkomlev.workoutdiaryandroid.model.WorkoutResponse;
 import com.vladimirkomlev.workoutdiaryandroid.utils.DateConverter;
 
@@ -31,7 +32,6 @@ import static com.vladimirkomlev.workoutdiaryandroid.constant.Constants.PREFEREN
 public class WorkoutsActivity extends AppCompatActivity implements WorkoutsView {
     private static final int INTENT_EDIT = 200;
     private static final int INTENT_ADD = 100;
-
 
     Toolbar toolbar;
     SwipeRefreshLayout swipeRefresh;
@@ -125,6 +125,8 @@ public class WorkoutsActivity extends AppCompatActivity implements WorkoutsView 
             case R.id.logout:
                 preferences.edit().clear().apply();
                 finish();
+                Intent intent = new Intent(WorkoutsActivity.this, SignInActivity.class);
+                startActivity(intent);
                 break;
 
             case R.id.restorePassword:

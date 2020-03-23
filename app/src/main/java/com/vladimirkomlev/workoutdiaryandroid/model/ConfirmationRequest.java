@@ -1,21 +1,21 @@
 package com.vladimirkomlev.workoutdiaryandroid.model;
 
 public class ConfirmationRequest {
-    private String secret;
+    private String code;
 
     public ConfirmationRequest() {
 
     }
 
-    public ConfirmationRequest(String secret) {
-        this.secret = secret;
+    public ConfirmationRequest(String code) {
+        this.code = code;
     }
 
-    public String getSecret() {
-        return secret;
+    public String getCode() {
+        return code;
     }
 
-    public void setSecret(String secret) {
-        this.secret = secret;
+    public void setCode(String code) {
+        this.code = code;
     }
 }

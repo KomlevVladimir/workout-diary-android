@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#1d1f2d</color>
+    <color name="colorPrimaryDark">#15161e</color>
+    <color name="colorAccent">#189be7</color>
+
+    <color name="red">#D81B60</color>
+    <color name="darkGreen">#008577</color>
     <color name="textBottom">#c9c9c9</color>
     <color name="text">#f511a9</color>
     <color name="rippleSignInBtn">#29487d</color>
@@ -18,4 +21,8 @@
     <color name="green">#2fcc5b</color>
     <color name="orange">#faa320</color>
     <color name="blue">#93caf5</color>
+    <color name="pink">#ed579a</color>
+    <color name="darkWhite">#dde6ec</color>
+    <color name="darkOrange">#e07714</color>
+    <color name="teal">#21dbdb</color>
 </resources>

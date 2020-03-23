@@ -45,6 +45,7 @@ public class SignUpActivity extends AppCompatActivity implements SignUpView {
         toolbarTextView = findViewById(R.id.toolbar_text_view);
         toolbarTextView.setText(R.string.sign_up);
         toolbar = findViewById(R.id.toolbar);
+        toolbar.setBackgroundColor(getResources().getColor(R.color.signUpBtn));
         setSupportActionBar(toolbar);
 
         if (getSupportActionBar() != null) {

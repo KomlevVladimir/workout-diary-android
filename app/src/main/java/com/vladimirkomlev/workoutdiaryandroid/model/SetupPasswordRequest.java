@@ -1,24 +1,24 @@
 package com.vladimirkomlev.workoutdiaryandroid.model;
 
 public class SetupPasswordRequest {
-    private String secret;
+    private String code;
     private String password;
 
     public SetupPasswordRequest() {
 
     }
 
-    public SetupPasswordRequest(String secret, String password) {
-        this.secret = secret;
+    public SetupPasswordRequest(String code, String password) {
+        this.code = code;
         this.password = password;
     }
 
-    public String getSecret() {
-        return secret;
+    public String getCode() {
+        return code;
     }
 
-    public void setSecret(String secret) {
-        this.secret = secret;
+    public void setCode(String code) {
+        this.code = code;
     }
 
     public String getPassword() {
