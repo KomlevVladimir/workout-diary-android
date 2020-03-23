@@ -1,0 +1,31 @@
+version: "3"
+services:
+  postgres:
+    image: "postgres"
+    environment:
+    - POSTGRES_PASSWORD=Password1!
+    ports:
+    - 5432:5432
+  rabbitmq:
+    image: "rabbitmq:management"
+    hostname: "rabbit"
+    ports:
+    - 5672:5672
+    - 15672:15672
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+    - 1025:1025
+    - 8025:8025
+  backend:
+    image: "docker.io/library/workout-diary-backend"
+    ports:
+    - 8080:8080
+    depends_on:
+    - postgres
+    - rabbitmq
+    environment:
+    - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/postgres
+    - SPRING_RABBITMQ_HOST=rabbitmq
+    - SPRING_MAIL_HOST=mailhog
+    - SPRING_MAIL_PORT=1025
