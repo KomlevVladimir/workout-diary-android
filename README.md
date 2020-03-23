@@ -4,10 +4,8 @@
 log in, log out, restore password. Create, update, delete workouts and get list of workouts
  as a varicolored cards.**
 
- In order to run the backend execute the command in the project directory:
- ```
- docker-compose up -d
- ```
+ Run docker-compose file in the project directory to start backend.
+ 
  ![Screenshot_20200323_173855](https://user-images.githubusercontent.com/19308409/77317140-b23b5980-6d1b-11ea-835f-c80d5c333c49.png)
  
 ![Screenshot_20200323_173927](https://user-images.githubusercontent.com/19308409/77317024-7accad00-6d1b-11ea-91f2-940f1f228bf7.png)
