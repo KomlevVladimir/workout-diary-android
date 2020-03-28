@@ -24,11 +24,11 @@ import static com.vladimirkomlev.workoutdiaryandroid.utils.Validation.validateNo
 import static com.vladimirkomlev.workoutdiaryandroid.utils.Validation.validatePassword;
 
 public class SignUpActivity extends AppCompatActivity implements SignUpView {
-    Button btnSubmit, btnCancel;
-    MaterialEditText firstname, lastname, age, email, password;
-    TextView toolbarTextView;
-    Toolbar toolbar;
-    ProgressDialog progressDialog;
+    private Button btnSubmit, btnCancel;
+    private MaterialEditText firstname, lastname, age, email, password;
+    private TextView toolbarTextView;
+    private Toolbar toolbar;
+    private ProgressDialog progressDialog;
 
     SignUpPresenter presenter;
 

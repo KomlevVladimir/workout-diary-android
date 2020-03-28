@@ -21,13 +21,13 @@ import static com.vladimirkomlev.workoutdiaryandroid.utils.Validation.validateNo
 import static com.vladimirkomlev.workoutdiaryandroid.utils.Validation.validatePassword;
 
 public class SetupPasswordActivity extends AppCompatActivity implements SetupPasswordView {
-    Toolbar toolbar;
-    TextView toolbarTextView;
-    Button btnSubmit, btnCancel;
-    MaterialEditText code, password;
-    ProgressDialog progressDialog;
+    private Toolbar toolbar;
+    private TextView toolbarTextView;
+    private Button btnSubmit, btnCancel;
+    private MaterialEditText code, password;
+    private ProgressDialog progressDialog;
 
-    SetupPasswordPresenter presenter;
+    private SetupPasswordPresenter presenter;
 
 
     @Override

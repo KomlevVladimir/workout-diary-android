@@ -25,17 +25,17 @@ import static com.vladimirkomlev.workoutdiaryandroid.utils.Validation.validateEm
 import static com.vladimirkomlev.workoutdiaryandroid.utils.Validation.validatePassword;
 
 public class SignInActivity extends AppCompatActivity implements SignInView {
-    Toolbar toolbar;
-    TextView toolbarTextView;
-    Button btnSubmit, btnCancel;
-    TextView forgotPassword;
-    MaterialEditText email, password;
-    ProgressDialog progressDialog;
+    private Toolbar toolbar;
+    private TextView toolbarTextView;
+    private Button btnSubmit, btnCancel;
+    private TextView forgotPassword;
+    private MaterialEditText email, password;
+    private ProgressDialog progressDialog;
 
-    SignInPresenter presenter;
+    private SignInPresenter presenter;
 
-    String token;
-    long userId;
+    private String token;
+    private long userId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

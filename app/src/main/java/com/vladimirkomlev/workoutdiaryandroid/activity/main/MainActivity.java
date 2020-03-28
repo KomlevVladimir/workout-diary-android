@@ -12,7 +12,7 @@ import com.vladimirkomlev.workoutdiaryandroid.activity.signin.SignInActivity;
 import com.vladimirkomlev.workoutdiaryandroid.activity.signup.SignUpActivity;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnSignIn, btnSignUp;
+    private Button btnSignIn, btnSignUp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -34,17 +34,17 @@ import static com.vladimirkomlev.workoutdiaryandroid.constant.Constants.PREFEREN
 import static com.vladimirkomlev.workoutdiaryandroid.utils.Validation.validateNotEmptyField;
 
 public class EditorActivity extends AppCompatActivity implements EditorView {
-    MaterialEditText etTitle, etDate, etDescription;
-    Calendar calendar = Calendar.getInstance();
-    String title, date, description;
-    long id;
-    Toolbar toolbar;
-    TextView toolbarTextView;
-    Menu menu;
-    ProgressDialog progressDialog;
+    private MaterialEditText etTitle, etDate, etDescription;
+    private Calendar calendar = Calendar.getInstance();
+    private String title, date, description;
+    private long id;
+    private Toolbar toolbar;
+    private TextView toolbarTextView;
+    private Menu menu;
+    private ProgressDialog progressDialog;
 
-    String token;
-    long userId;
+    private String token;
+    private long userId;
 
     EditorPresenter presenter;
 

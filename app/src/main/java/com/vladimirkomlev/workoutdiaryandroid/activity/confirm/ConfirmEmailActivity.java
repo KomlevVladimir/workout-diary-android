@@ -21,11 +21,11 @@ import com.vladimirkomlev.workoutdiaryandroid.utils.Messages;
 import static com.vladimirkomlev.workoutdiaryandroid.utils.Validation.validateNotEmptyField;
 
 public class ConfirmEmailActivity extends AppCompatActivity implements ConfirmEmailView {
-    Toolbar toolbar;
-    TextView toolbarTextView;
-    Button btnSubmit, btnCancel;
-    MaterialEditText code;
-    ProgressDialog progressDialog;
+    private Toolbar toolbar;
+    private TextView toolbarTextView;
+    private Button btnSubmit, btnCancel;
+    private MaterialEditText code;
+    private ProgressDialog progressDialog;
 
     ConfirmEmailPresenter presenter;
 

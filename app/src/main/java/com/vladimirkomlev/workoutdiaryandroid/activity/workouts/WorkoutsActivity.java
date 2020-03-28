@@ -33,21 +33,21 @@ public class WorkoutsActivity extends AppCompatActivity implements WorkoutsView 
     private static final int INTENT_EDIT = 200;
     private static final int INTENT_ADD = 100;
 
-    Toolbar toolbar;
-    SwipeRefreshLayout swipeRefresh;
-    TextView toolbarTextView;
-    FloatingActionButton addButton;
-    RecyclerView recyclerView;
+    private Toolbar toolbar;
+    private SwipeRefreshLayout swipeRefresh;
+    private TextView toolbarTextView;
+    private FloatingActionButton addButton;
+    private RecyclerView recyclerView;
 
-    WorkoutsPresenter presenter;
-    WorkoutsAdapter adapter;
-    WorkoutsAdapter.RecyclerViewClickListener listener;
-    List<WorkoutResponse> workouts;
+    private WorkoutsPresenter presenter;
+    private WorkoutsAdapter adapter;
+    private WorkoutsAdapter.RecyclerViewClickListener listener;
+    private List<WorkoutResponse> workouts;
 
-    SharedPreferences preferences;
+    private SharedPreferences preferences;
 
-    String token;
-    long userId;
+    private String token;
+    private long userId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

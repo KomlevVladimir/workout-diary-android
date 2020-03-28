@@ -19,13 +19,13 @@ import com.vladimirkomlev.workoutdiaryandroid.utils.Messages;
 import com.vladimirkomlev.workoutdiaryandroid.utils.Validation;
 
 public class ResetPasswordActivity extends AppCompatActivity implements ResetPasswordView {
-    Toolbar toolbar;
-    TextView toolbarTextView;
-    Button btnSubmit, btnCancel;
-    MaterialEditText email;
-    ProgressDialog progressDialog;
+    private Toolbar toolbar;
+    private TextView toolbarTextView;
+    private Button btnSubmit, btnCancel;
+    private MaterialEditText email;
+    private ProgressDialog progressDialog;
 
-    ResetPasswordPresenter presenter;
+    private ResetPasswordPresenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

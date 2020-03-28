@@ -22,6 +22,8 @@
             android:layout_below="@+id/toolbar"
             android:hint="@string/title_of_activity"
             android:textSize="25sp"
+            android:maxLength="50"
+            android:maxLines="1"
             android:inputType="textCapSentences"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -29,8 +31,6 @@
             android:layout_marginRight="16dp"
             android:layout_marginTop="20dp"
             tools:ignore="Autofill" />
-
-
 
         <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/description"
@@ -64,129 +64,6 @@
             android:layout_marginRight="16dp"
             android:layout_marginTop="60dp" />
 
-
-
-
     </RelativeLayout>
-
-
-
-
-
-
-    <!--    <LinearLayout-->
-<!--        android:id="@+id/titleLayout"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_centerHorizontal="true"-->
-<!--        android:gravity="center"-->
-<!--        android:orientation="vertical">-->
-
-<!--        <include-->
-<!--            android:id="@+id/toolbar"-->
-<!--            layout="@layout/toolbar"-->
-<!--            />-->
-
-<!--    <com.google.android.material.textfield.TextInputLayout-->
-<!--        android:id="@+id/titleInputLayout"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:paddingStart="36dp"-->
-<!--        android:paddingEnd="36dp"-->
-<!--        app:hintEnabled="false"-->
-<!--        android:orientation="vertical">-->
-
-<!--        <com.rengwuxian.materialedittext.MaterialEditText-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:id="@+id/fieldTitle"-->
-<!--            android:hint="@string/title"-->
-<!--            android:inputType="text"-->
-<!--            android:text=""-->
-<!--            android:textColor="@color/design_default_color_primary"-->
-<!--            android:textColorHint="@color/design_default_color_primary_dark"-->
-<!--            app:met_floatingLabel="highlight"-->
-<!--            app:met_baseColor="#0056d3"-->
-<!--            app:met_primaryColor="#982360"-->
-<!--            app:met_errorColor="#cba456"-->
-<!--            app:met_singleLineEllipsis="true" />-->
-
-<!--    </com.google.android.material.textfield.TextInputLayout>-->
-
-<!--    </LinearLayout>-->
-
-<!--    <LinearLayout-->
-<!--        android:id="@+id/dateLayout"-->
-<!--        android:layout_weight="2"-->
-<!--        android:layout_below="@+id/titleLayout"-->
-<!--        android:orientation="horizontal"-->
-<!--        android:layout_marginTop="30dp"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content">-->
-
-<!--        <ImageView-->
-<!--            android:layout_gravity="center_vertical"-->
-<!--            android:src="@drawable/ic_date"-->
-<!--            android:paddingStart="10dp"-->
-<!--            android:layout_width="26dp"-->
-<!--            android:layout_height="26dp" />-->
-
-
-<!--    <com.google.android.material.textfield.TextInputLayout-->
-<!--        android:id="@+id/dateInputLayout"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:paddingStart="10dp"-->
-<!--        android:paddingEnd="36dp"-->
-<!--        app:hintEnabled="false"-->
-<!--        android:orientation="vertical">-->
-
-<!--        <com.rengwuxian.materialedittext.MaterialEditText-->
-
-<!--            android:id="@+id/dateField"-->
-<!--            android:hint="@string/date"-->
-<!--            android:inputType="date"-->
-<!--            android:fontFamily="sans-serif-light"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content" />-->
-
-<!--    </com.google.android.material.textfield.TextInputLayout>-->
-
-<!--    </LinearLayout>-->
-
-<!--    <LinearLayout-->
-<!--        android:id="@+id/descriptionLayout"-->
-<!--        android:layout_marginTop="50dp"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-
-<!--        android:layout_below="@+id/dateLayout">-->
-
-<!--        <com.google.android.material.textfield.TextInputLayout-->
-<!--            android:id="@+id/DescriptionInputLayout"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="400dp"-->
-<!--            android:layout_marginStart="36dp"-->
-<!--            android:layout_marginEnd="36dp">-->
-
-<!--            <com.rengwuxian.materialedittext.MaterialEditText-->
-<!--                android:id="@+id/descriptionField"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:gravity="top"-->
-<!--                android:hint="Description"-->
-<!--                android:inputType="textMultiLine"-->
-<!--                android:overScrollMode="always"-->
-<!--                android:scrollbarStyle="insideInset"-->
-<!--                android:scrollbars="vertical" />-->
-<!--        </com.google.android.material.textfield.TextInputLayout>-->
-
-
-
-<!--    </LinearLayout>-->
-
-
-
-
 
 </androidx.core.widget.NestedScrollView>
