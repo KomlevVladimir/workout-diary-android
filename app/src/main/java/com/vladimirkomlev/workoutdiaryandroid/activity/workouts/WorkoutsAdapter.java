@@ -98,10 +98,7 @@ public class WorkoutsAdapter extends RecyclerView.Adapter<WorkoutsAdapter.Workou
 
             Random random = new Random();
             return colors.get(random.nextInt(colors.size()));
-
         }
-
-
     }
 
     public interface RecyclerViewClickListener {

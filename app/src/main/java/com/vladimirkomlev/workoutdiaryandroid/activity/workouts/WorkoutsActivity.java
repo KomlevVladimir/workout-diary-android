@@ -126,6 +126,8 @@ public class WorkoutsActivity extends AppCompatActivity implements WorkoutsView 
                 preferences.edit().clear().apply();
                 finish();
                 Intent intent = new Intent(WorkoutsActivity.this, SignInActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
                 break;
 
