@@ -1,20 +1,36 @@
 package com.vladimirkomlev.workoutdiaryandroid.utils;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
 
 public class DateConverter {
+    private static SimpleDateFormat sdf1 = new SimpleDateFormat("dd MMMM yyyy", Locale.US);
+    private static SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy-MM-dd", Locale.US);
 
-    private static DateTimeFormatter format1 = DateTimeFormatter.ofPattern("dd MMMM yyyy");
-    private static DateTimeFormatter format2 = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
     public static String toFirstFormat(String string) {
-        LocalDate localDate = LocalDate.parse(string, format2);
-        return format1.format(localDate);
+        String formattedDate = null;
+        try {
+            Date date = sdf2.parse(string);
+            formattedDate = sdf1.format(date);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        return formattedDate;
     }
 
     public static String toSecondFormat(String string) {
-        LocalDate localDate = LocalDate.parse(string, format1);
-        return format2.format(localDate);
+        String formattedDate = null;
+        try {
+            Date date = sdf1.parse(string);
+            formattedDate = sdf2.format(date);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        return formattedDate;
     }
 }

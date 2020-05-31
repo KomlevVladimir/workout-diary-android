@@ -60,10 +60,7 @@ public class SetupPasswordActivity extends AppCompatActivity implements SetupPas
         if (args != null) {
             String email = (String) args.getSerializable("email");
             TextView setupPasswordDescription = findViewById(R.id.setupPasswordDescription);
-            setupPasswordDescription.setText("We have sent a confirmation code on "
-                    + email +
-                    ". Please check your email," +
-                    " enter the code and new password");
+            setupPasswordDescription.setText(getString(R.string.setup_password_text, email));
         }
 
         btnCancel.setOnClickListener(new View.OnClickListener() {

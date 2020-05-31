@@ -26,4 +26,6 @@
     <string name="description_of_activity">Description of activity…</string>
     <string name="date_of_activity">Date of activity…</string>
     <string name="description">Description</string>
+    <string name="confirm_email_text">%1$s, we have sent a confirmation code on %2$s. Please check your email and enter the code to confirm your email.</string>
+    <string name="setup_password_text">We have sent a confirmation code on %1$s. Please check your email, enter the code and new password.</string>
 </resources>

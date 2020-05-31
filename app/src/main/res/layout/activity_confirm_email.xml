@@ -28,6 +28,8 @@
             android:background="@android:color/white"
             android:textAlignment="center"
             android:textSize="20sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
             android:fontFamily="@font/montserrat"
             android:gravity="center"
             />
@@ -46,6 +48,8 @@
                 android:inputType="text"
                 android:text=""
                 android:maxLength="6"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:textColor="@color/design_default_color_primary"
                 android:textColorHint="@color/design_default_color_primary_dark"
 

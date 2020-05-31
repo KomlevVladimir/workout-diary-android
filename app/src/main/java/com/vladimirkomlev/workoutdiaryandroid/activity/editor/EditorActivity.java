@@ -152,9 +152,9 @@ public class EditorActivity extends AppCompatActivity implements EditorView {
 
             case R.id.menu_save:
                 if (id == 0) {
-                    if (validateNotEmptyField(etTitle) ||
-                            validateNotEmptyField(etDate) ||
-                            validateNotEmptyField(etDescription)
+                    if (validateNotEmptyField(etTitle) &&
+                            validateNotEmptyField(etDescription) &&
+                            validateNotEmptyField(etDate)
                     ) {
                         presenter.saveWorkout(
                                 userId,
@@ -171,9 +171,9 @@ public class EditorActivity extends AppCompatActivity implements EditorView {
                         readMode();
                     }
                 } else {
-                    if (validateNotEmptyField(etTitle) ||
-                            validateNotEmptyField(etDate) ||
-                            validateNotEmptyField(etDescription)
+                    if (validateNotEmptyField(etTitle) &&
+                            validateNotEmptyField(etDescription) &&
+                            validateNotEmptyField(etDate)
                     ) {
                         presenter.updateWorkout(
                                 userId,

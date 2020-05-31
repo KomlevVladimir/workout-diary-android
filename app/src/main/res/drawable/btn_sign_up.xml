@@ -6,10 +6,10 @@
 
     <item>
         <shape android:shape="rectangle">
-            <solid android:color="@color/signUpBtn"></solid>
-            <stroke android:color="@color/rippleSignUpBtn"></stroke>
-            <stroke android:width="1dp"></stroke>
-            <corners android:radius="2dp"></corners>
+            <solid android:color="@color/signUpBtn"/>
+            <stroke android:color="@color/rippleSignUpBtn"/>
+            <stroke android:width="1dp"/>
+            <corners android:radius="2dp"/>
         </shape>
     </item>
 </ripple>

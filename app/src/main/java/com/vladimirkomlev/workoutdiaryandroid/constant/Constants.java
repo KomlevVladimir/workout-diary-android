@@ -15,7 +15,7 @@ public class Constants {
                     "(?=.*[A-Z])" +
                     "(?!.*\\s)" +
                     ".{8,100}$");
-    public static final String NOT_EMPTY_PATTERN = "^(?=\\s*\\S).*$";
+    public static final String NOT_EMPTY_PATTERN = "^\\s*\\S[\\s\\S]*$";
     public static final String ONLY_DIGITS_PATTERN = "\\d+";
     public static final String PREFERENCES = "myPrefs";
 }

@@ -58,11 +58,11 @@ public class ConfirmEmailActivity extends AppCompatActivity implements ConfirmEm
         if (args != null) {
             UserResponse userResponse = (UserResponse) args.getSerializable(UserResponse.class.getSimpleName());
             TextView confirmEmailDescription = findViewById(R.id.confirmEmailDescription);
-            confirmEmailDescription.setText(userResponse.getFirstName() +
-                    ", we have sent a confirmation code on "
-                    + userResponse.getEmail() +
-                    ". Please check your email and" +
-                    " enter the code to confirm your email.");
+            confirmEmailDescription.setText(getString(
+                    R.string.confirm_email_text,
+                    userResponse.getFirstName(),
+                    userResponse.getEmail()
+            ));
         }
 
         btnCancel.setOnClickListener(new View.OnClickListener() {

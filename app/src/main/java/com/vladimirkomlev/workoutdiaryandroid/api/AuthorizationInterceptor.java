@@ -18,7 +18,6 @@ public class AuthorizationInterceptor implements Interceptor {
         if (response.code() == 401 || response.code() == 403) {
             Intent intent = new Intent(App.context, SignInActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
             App.context.startActivity(intent);
         }
         return response;

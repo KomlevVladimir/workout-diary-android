@@ -24,3 +24,7 @@ services:
     environment:
     - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/postgres
     - SPRING_RABBITMQ_HOST=rabbitmq
+networks:
+  default:
+    external:
+      name: my_network

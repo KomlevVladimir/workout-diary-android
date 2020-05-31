@@ -120,6 +120,15 @@ public class SignInActivity extends AppCompatActivity implements SignInView {
     }
 
     @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if (progressDialog != null) {
+            progressDialog.dismiss();
+            progressDialog = null;
+        }
+    }
+
+    @Override
     public void onLogInFailed(String message) {
         Messages.showError(this, message);
     }

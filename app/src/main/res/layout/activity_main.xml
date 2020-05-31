@@ -64,7 +64,7 @@
             android:id="@+id/btnSignIn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="6dp"
+            android:layout_marginEnd="6dp"
             android:layout_weight="1"
             android:background="@drawable/btn_sign_in"
             android:fontFamily="@font/montserrat"
@@ -75,7 +75,7 @@
             android:id="@+id/btnSignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
             android:layout_weight="1"
 
             android:background="@drawable/btn_sign_up"
