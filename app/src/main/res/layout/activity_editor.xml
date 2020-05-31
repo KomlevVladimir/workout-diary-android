@@ -30,6 +30,9 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="20dp"
+            app:met_baseColor="@android:color/black"
+            app:met_primaryColor="@color/colorAccent"
+            app:met_errorColor="@color/red"
             tools:ignore="Autofill" />
 
         <com.rengwuxian.materialedittext.MaterialEditText
@@ -42,6 +45,9 @@
             android:layout_marginTop="20dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
+            app:met_baseColor="@android:color/black"
+            app:met_primaryColor="@color/colorAccent"
+            app:met_errorColor="@color/red"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
@@ -60,6 +66,9 @@
             android:layout_below="@+id/description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:met_baseColor="@android:color/black"
+            app:met_primaryColor="@color/colorAccent"
+            app:met_errorColor="@color/red"
             android:layout_marginStart="56dp"
             android:layout_marginEnd="16dp"
             android:layout_marginTop="60dp" />

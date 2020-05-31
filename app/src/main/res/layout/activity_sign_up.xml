@@ -41,9 +41,9 @@
             android:textColor="@color/design_default_color_primary"
             android:textColorHint="@color/design_default_color_primary_dark"
             app:met_floatingLabel="highlight"
-            app:met_baseColor="#0056d3"
-            app:met_primaryColor="#982360"
-            app:met_errorColor="#cba456"
+            app:met_baseColor="@android:color/black"
+            app:met_primaryColor="@color/colorAccent"
+            app:met_errorColor="@color/red"
             app:met_singleLineEllipsis="true" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -68,9 +68,9 @@
             android:textColor="@color/design_default_color_primary"
             android:textColorHint="@color/design_default_color_primary_dark"
             app:met_floatingLabel="highlight"
-            app:met_baseColor="#0056d3"
-            app:met_primaryColor="#982360"
-            app:met_errorColor="#ddaa00"
+            app:met_baseColor="@android:color/black"
+            app:met_primaryColor="@color/colorAccent"
+            app:met_errorColor="@color/red"
             app:met_singleLineEllipsis="true" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -94,9 +94,9 @@
             android:textColor="@color/design_default_color_primary"
             android:textColorHint="@color/design_default_color_primary_dark"
             app:met_floatingLabel="highlight"
-            app:met_baseColor="#0056d3"
-            app:met_primaryColor="#982360"
-            app:met_errorColor="#ddaa00"
+            app:met_baseColor="@android:color/black"
+            app:met_primaryColor="@color/colorAccent"
+            app:met_errorColor="@color/red"
             app:met_singleLineEllipsis="true" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -120,9 +120,9 @@
             android:textColor="@color/design_default_color_primary"
             android:textColorHint="@color/design_default_color_primary_dark"
             app:met_floatingLabel="highlight"
-            app:met_baseColor="#0056d3"
-            app:met_primaryColor="#982360"
-            app:met_errorColor="#ddaa00"
+            app:met_baseColor="@android:color/black"
+            app:met_primaryColor="@color/colorAccent"
+            app:met_errorColor="@color/red"
             app:met_singleLineEllipsis="true" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -146,9 +146,9 @@
             android:textColor="@color/design_default_color_primary"
             android:textColorHint="@color/design_default_color_primary_dark"
             app:met_floatingLabel="highlight"
-            app:met_baseColor="#0056d3"
-            app:met_primaryColor="#982360"
-            app:met_errorColor="#ddaa00"
+            app:met_baseColor="@android:color/black"
+            app:met_primaryColor="@color/colorAccent"
+            app:met_errorColor="@color/red"
             app:met_singleLineEllipsis="true" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -181,7 +181,7 @@
             android:layout_weight="1"
             android:layout_marginStart="25dp"
             android:layout_marginTop="10dp"
-            android:background="@color/signUpBtn"
+            android:background="@drawable/btn_sign_up"
             android:fontFamily="@font/montserrat"
             android:text="@string/submit"
             android:textColor="@android:color/white" />
